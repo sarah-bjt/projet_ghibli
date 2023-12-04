@@ -18,7 +18,7 @@ fetch('https://ghibliapi.dev/films').then(response => response.json()).then(donn
         let new_film = document.createElement('div');
         new_film.classList.add('film');
 
-        new_film.innerHTML += `<img src="${film.image}" alt="image ${film.title}" height="15%" width="15%"/>`;  //height="15%" width="15%"   <div id="photo"></div>
+        new_film.innerHTML += `<img src="${film.image}" alt="image ${film.title}"/>`;  //height="15%" width="15%"   <div id="photo"></div>
         new_film.innerHTML += `<div class="element_film"><h3>${film.title}</h3><p><b>Director : </b>${film.director}</p><p><b>Released Date : </b>${film.release_date}
             </p><p>${film.description}</p></div>`;
 

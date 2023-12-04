@@ -12,6 +12,34 @@ header {
     padding: 2%;
 }
 
+nav {
+    display: flex;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px; 
+}
+
+.deroulant:hover + .sous,
+.sous:hover {
+    display: block;
+}
+
+.sous {
+    display: none;
+    position: absolute;
+    background-color: lightgreen; 
+    list-style: none;
+    padding: 20px;
+    z-index: 100; 
+}
+
 footer {
     background-color: rgb(142, 199, 142);
     display: flex;
@@ -43,4 +71,10 @@ footer {
 .element_film {
     background-color: white;
     border-radius: 15px;
+}
+
+img {
+    border-radius: 15px;
+    height: 20vh;
+    width: 15vw;
 }

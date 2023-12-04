@@ -4,8 +4,9 @@
     padding: 0px;
     font-family:'Quicksand', sans-serif;
 }
-
-
+h1 {
+    margin : 5px;
+}
 
 header {
     background-color: #333; 
@@ -15,25 +16,20 @@ header {
     justify-content: space-between; 
     align-items: center;
 }
-
-
 header img {
     max-width: 100px;
 }
-
-nav {
+/* nav {
     display: flex;
-}
-
-
+} */
 nav ul {
-    list-style: none;
+    /* list-style: none; */
     display: flex;
 }
 
-nav li {
+/* nav li {
     margin-right: 20px; 
-}
+} */
 
 
 
@@ -52,7 +48,7 @@ nav li {
 }
 
 
-.main {
+main *{
     display: flex;
 }
 
@@ -63,10 +59,11 @@ nav li {
 .text_miyazaki,
 .text_bio,
 .text_otherWorks {
-    background-color: #4CAF50; 
+    flex-direction: row;
+    background-color: green; 
     border-radius: 15px;
     padding: 50px;
-    margin-bottom: 20px; 
+    margin: 20px; 
     color: #fff; 
 }
 
@@ -89,4 +86,13 @@ nav li {
     margin-right: 30px;
     padding: 20px;
     margin-top: 10px;
+}
+
+
+footer {
+    background-color: rgb(142, 199, 142);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2%;
 }
