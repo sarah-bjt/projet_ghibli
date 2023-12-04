@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Quicksand', sans-serif;
+}
+
+
+
+header {
+    background-color: #333; 
+    color: #fff;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+header img {
+    max-width: 100px;
+}
+
+nav {
+    display: flex;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px; 
+}
+
+
+
+.deroulant:hover + .sous,
+.sous:hover {
+    display: block;
+}
+
+.sous {
+    display: none;
+    position: absolute;
+    background-color: lightgreen; 
+    list-style: none;
+    padding: 20px;
+    z-index: 100; 
+}
+
+
+.main {
+    display: flex;
+}
+
+.text_miyazaki {
+    flex: 1; 
+}
+
+.text_miyazaki,
+.text_bio,
+.text_otherWorks {
+    background-color: #4CAF50; 
+    border-radius: 15px;
+    padding: 50px;
+    margin-bottom: 20px; 
+    color: #fff; 
+}
+
+#miyazaki_pic {
+    max-width: 100px; 
+}
+#miyazaki_signature {
+    max-width: 100px;
+}
+
+.picturs {
+    display: flex;
+    overflow-x: auto; 
+    padding: 10px;
+}
+
+
+.picturs img {
+    max-width: 100%; 
+    margin-right: 30px;
+    padding: 20px;
+    margin-top: 10px;
+}
