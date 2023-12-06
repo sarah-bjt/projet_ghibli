@@ -13,7 +13,7 @@
   //document.getElementsByClassName('film') = films;
 let i=0;
 fetch('https://ghibliapi.dev/films').then(response => response.json()).then(donnees => {
-    let div_films = document.querySelector('#contenant_films');
+    let div_films = document.getElementById('contenant_films');
     donnees.forEach(film => {
         if(i%2==0){
             let new_film = document.createElement('div');
