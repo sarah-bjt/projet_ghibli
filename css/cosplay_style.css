@@ -95,6 +95,7 @@ button{
     flex-direction: row;
     justify-content: center;
     border-radius: 15px;
+    padding: 2%;
 }
 
 .persos {
