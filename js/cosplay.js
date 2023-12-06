@@ -1,7 +1,9 @@
 
-fetch('https://ghibliapi.dev/people').then(response => response.json()).then(donnees => {
-    let div_persos = document.getElementById('contenant_persos');
-    donnees.forEach(persos => {
+fetch('https://ghibliapi.dev/people')
+    .then(response => response.json())
+    .then(donnees => {
+        let div_persos = document.getElementById('contenant_persos');
+        donnees.forEach(persos => {
             let new_character = document.createElement('div');
             new_character.classList.add('persos');
 
@@ -10,5 +12,5 @@ fetch('https://ghibliapi.dev/people').then(response => response.json()).then(don
 
             div_persos.appendChild(new_character);
 
-    })
+        })
 });

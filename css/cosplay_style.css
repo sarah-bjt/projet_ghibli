@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Love+Ya+Like+A+Sister&family=Quicksand&display=swap');
 
+/* Pour le tout de la page */
 * {
     margin: 0px;
     padding: 0px;
@@ -12,11 +13,12 @@ body{
     color: black;
 }
 
+/* Pour le header de la page */
+
 button{
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Add a black background color to the top navigation */
 .navbar {
     display: flex;
     justify-content: space-between; /* Aligne les éléments à l'extrémité de chaque côté */
@@ -34,13 +36,11 @@ button{
     cursor: pointer;
 }
   
-/* The container <div> - needed to position the dropdown content */
 .dropdown_menu {
     position: relative;
     display: inline-block;
 }
-  
-/* Dropdown Content (Hidden by Default) */
+
 .dropdown_list {
     opacity: 0;
     list-style-type: none;
@@ -54,7 +54,7 @@ button{
     transition: opacity 0.3s ease;
 }
   
-/* Links inside the dropdown */
+
 .dropdown_list a {
     color: #65544A;
     padding: 12px 16px;
@@ -63,15 +63,12 @@ button{
     border-radius: 10px;
 }
   
-/* Change color of dropdown links on hover */
 .dropdown_list a:focus-within {background-color: #f1f1f1}
   
-/* Show the dropdown menu on hover */
 .dropdown_menu:focus-within .dropdown_list{
     opacity: 1;
 }
   
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown_menu:focus-within .dropdown_button {
     background-color: #70AF85;
 }
@@ -81,22 +78,7 @@ button{
     font-size: xx-large;
 }
 
-footer {
-    margin-top: 3%;
-    background-color: #70AF85;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 2%;
-}
-
-address {
-    margin: 2%;
-}
-
-#menu {
-    margin: 2%;
-}
+/* Intérieur de la page */
 
 #fond {
     background-color: #70AF85;
@@ -153,4 +135,24 @@ address {
     flex-direction: row;
     justify-content: center;
     margin-top: 2%;
+    padding: 2%;
+}
+
+/* Pour le footer de la page */
+
+footer {
+    margin-top: 3%;
+    background-color: #70AF85;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2%;
+}
+
+address {
+    margin: 2%;
+}
+
+#menu {
+    margin: 2%;
 }
