@@ -156,19 +156,29 @@ button{
 
 /* Pour le footer de la page */
 
-footer {
-    margin-top: 3%;
-    background-color: #70AF85;
+/* Disposition des éléments du footer */
+#footer_elements{
+    border-top: 2px solid #65544A; /* ligne séparateur */
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 2%;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-address {
-    margin: 2%;
+/* Disposition partie du lien vers le site officiel Ghibli */ 
+#link_official_ghibli{
+    display: flex;
+    flex-direction: column;
 }
 
-#menu {
-    margin: 2%;
+/* Mise en page navigation dans le footer */
+#navigation_footer_links{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* mise en page copyright et disclaimer */
+#copyright_and_disclaimer{
+    text-align: center;
+    margin-top: 25px;
 }
