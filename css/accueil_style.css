@@ -6,11 +6,35 @@ body{
     color: #65544A;
 }
 
-footer{
-    border-top: 2px solid #65544A;
+/* FOOTER */
+/* Disposition des éléments du footer */
+#footer_elements{
+    border-top: 2px solid #65544A; /* ligne séparateur */
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Disposition partie du lien vers le site officiel Ghibli */ 
+#link_official_ghibli{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mise en page navigation dans le footer */
+#navigation_footer_links{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* mise en page copyright et disclaimer */
+#copyright_and_disclaimer{
+    text-align: center;
+    margin-top: 25px;
 }
 
 
+/* HEADER */
 /* Disposition des éléments dans le header/navbar */
 .navbar {
     display: flex;
@@ -66,6 +90,8 @@ footer{
 .dropdown_list {
     opacity: 0;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
     position: absolute;
     background-color: #f9f9f9;
     border-radius: 10px;

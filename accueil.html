@@ -24,40 +24,70 @@
         <div class="dropdown_menu">
           <button class="dropdown_button">Menu</button>
           <ul class="dropdown_list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Hayao Miyazaki</a></li>
-            <li><a href="#">Movies</a></li>
+            <li><a href="accueil.html">Home</a></li>
+            <li><a href="pages/miyazaki.html">Hayao Miyazaki</a></li>
+            <li><a href="pages/page_films.html">Movies</a></li>
+            <li><a href="pages/cosplay.html">Characters</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <!-- bannière avec citations -->
-    <div id="homepage_banner">
-      <div id="homepage_quotes">
-      <!-- citations aléatoires qui apparaissent façon typewriter sur JS-->
+    <main>
+      <!-- bannière avec citations -->
+      <div id="homepage_banner">
+        <div id="homepage_quotes">
+        <!-- citations aléatoires qui apparaissent façon typewriter sur JS-->
+        </div>
       </div>
-    </div>
 
 
-    <!-- section News -->
-    <h2 id="news_title">News</h2>
-    
-    <section id="homepage_news">
-      <article class="news">
-        <h3>Miyazaki's Retirement</h3>
-        <p>Hayao Miyazaki, one of the founders of Studio Ghibli, has announced his retirement multiple times but has returned to create new films. His dedication to his craft and storytelling has kept him active in the industry.</p>
-      </article>
-    
-      <article class="news">
-        <h3>Ghibli Museum</h3>
-        <p>Located in Mitaka, Tokyo, the Ghibli Museum offers an immersive experience into the world of Studio Ghibli. It features exhibitions, short films, and life-sized replicas of Ghibli characters.</p>
-      </article>
-    </section>
+      <!-- section News -->
+      <h2 id="news_title">News</h2>
+      
+      <section id="homepage_news">
+        <article class="news">
+          <h3>Miyazaki's Retirement</h3>
+          <p>Hayao Miyazaki, one of the founders of Studio Ghibli, has announced his retirement multiple times but has returned to create new films. His dedication to his craft and storytelling has kept him active in the industry.</p>
+        </article>
+      
+        <article class="news">
+          <h3>Ghibli Museum</h3>
+          <p>Located in Mitaka, Tokyo, the Ghibli Museum offers an immersive experience into the world of Studio Ghibli. It features exhibitions, short films, and life-sized replicas of Ghibli characters.</p>
+        </article>
+      </section>
+    </main>
 
     <footer>
       <!-- footer avec contacts, liens, etc. -->
-      footer
+      <div id="footer_elements">
+        <section>
+          <h4>Contact Information</h4>
+            <address>
+              <a href="mailto:sarah.beaujault@edu.esiee.fr">sarah.beaujault@edu.esiee.fr</a><br>
+              <a href="mailto:sousada.boualapha@edu.esiee.fr">sousada.boualapha@edu.esiee.fr</a><br>
+              <a href="mailto:lison.fortin@edu.esiee.fr">lison.fortin@edu.esiee.fr</a>
+            </address>
+        </section>
+
+        <section id="link_official_ghibli">
+          <h4>Link to Official Ghibli Website</h4>
+          <a href="https://www.ghibli.jp/"><img id="logo_studio_ghibli" src="images/Logo_Ghibli.svg" alt="Logo of Studio Ghibli"/></a>
+        </section>
+
+        <nav>
+          <h4>Navigation</h4>
+          <ul id="navigation_footer_links">
+            <li><a href="accueil.html">Home</a></li>
+            <li><a href="pages/miyazaki.html">Hayao Miyazaki</a></li>
+            <li><a href="pages/page_films.html">Movies</a></li>
+            <li><a href="pages/cosplay.html">Characters</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <p id="copyright_and_disclaimer">© 2023 Spirited Ghibli. All rights reserved.<br>This is an unofficial fansite and is not affiliated with or endorsed by Studio Ghibli.</p>
+    
     </footer>
 
   </body>
