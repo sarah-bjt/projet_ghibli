@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Love+Ya+Like+A+Sister&family=Quicksand&display=swap');
 
 body{
     font-family: 'Quicksand', sans-serif;
-    background-color: #C4E0B4;
-    color: black;
+    background-color: #C6EBC9;
+    color: #65544A;
+}
+
+footer{
+    border-top: 2px solid #65544A;
 }
 
 button{
@@ -15,11 +19,12 @@ button{
     display: flex;
     justify-content: space-between; /* Aligne les éléments à l'extrémité de chaque côté */
     align-items: center; /* Centre les éléments verticalement */
-    border-bottom: 2px solid #487B65;
+    border-bottom: 2px solid #65544A;
 }
 
 .dropdown_button {
-    background-color: #6AB1A3;
+    background-color: #70AF85;
+    border-radius: 10px;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -35,46 +40,56 @@ button{
   
 /* Dropdown Content (Hidden by Default) */
 .dropdown_list {
-    display: none;
+    opacity: 0;
+    list-style-type: none;
     position: absolute;
     background-color: #f9f9f9;
+    border-radius: 10px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     right: 0;
+    transition: opacity 0.3s ease;
 }
   
 /* Links inside the dropdown */
 .dropdown_list a {
-    color: black;
+    color: #65544A;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-radius: 10px;
 }
   
 /* Change color of dropdown links on hover */
-.dropdown_list a:hover {background-color: #f1f1f1}
+.dropdown_list a:focus-within {background-color: #f1f1f1}
   
 /* Show the dropdown menu on hover */
-.dropdown_menu:hover .dropdown_list{
-    display: block;
+.dropdown_menu:focus-within .dropdown_list{
+    opacity: 1;
 }
   
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown_menu:hover .dropdown_button {
-    background-color: #61a38f;
+.dropdown_menu:focus-within .dropdown_button {
+    background-color: #70AF85;
 }
 
 .news{
     border-radius: 15px;
-    background-color: #487B65;
-    color: #EFEBCE;
+    background-color: #70AF85;
+    color: white;
     margin: 20px;
     padding: 20px;
 }
 
+#website_title{
+    font-family: 'Love Ya Like A Sister', 'sans-serif';
+    font-size: xx-large;
+}
+
 #homepage_banner{
     background-image: url("../images/banner_page_accueil.gif");
+    opacity: 0.8;
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -83,6 +98,7 @@ button{
 #homepage_quotes{
     font-size: x-large;
     font-family: 'Chelsea Market', 'sans-serif';
+    color:rgb(55, 27, 6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,11 +112,9 @@ button{
 }
 
 #news_title{
-    color: #41705C;
-    font-family: 'Chelsea Market', 'sans-serif';
-    font-weight: 100;
-    border-bottom: 2px solid #41705C;
-    border-top: 2px solid #41705C;
+    font-family: 'Love Ya Like A Sister', 'sans-serif';
+    border-bottom: 2px solid #65544A;
+    border-top: 2px solid #65544A;
     padding: 5px;
     text-align: center;
 }
