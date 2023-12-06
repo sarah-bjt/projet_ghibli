@@ -115,28 +115,34 @@ address {
     border-radius: 15px;
 }
 
-.film {
+.persos {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 2%;
 }
 
-.element_film {
+.element_persos {
     color: #65544A;
     background-color: #F0E2D0;
     border-radius: 15px;
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     padding: 2%;
 }
 
-img.affiches {
-    border-radius: 15px;
-    height: 40vh;
-    width: 15vw;
+.element_persos p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.element_persos h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #presentation {
@@ -147,5 +153,4 @@ img.affiches {
     flex-direction: row;
     justify-content: center;
     margin-top: 2%;
-   /* width: 60%;*/
 }
