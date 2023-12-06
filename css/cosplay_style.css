@@ -15,6 +15,21 @@ body{
 
 /* Pour le header de la page */
 
+/* LOGO ANIMATION FLOTTANTE */
+#logo_site{
+    width: 100px;
+	animation-name: floating;
+	animation-duration: 2s;
+	animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 7px); } 
+    100%   { transform: translate(0, -0px); }     
+}
+
 button{
     font-family: 'Quicksand', sans-serif;
 }
