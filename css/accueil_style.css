@@ -14,6 +14,13 @@ body{
     justify-content: space-around;
 }
 
+@media (max-width: 650px) {
+    #footer_elements {
+      flex-direction: column;
+      margin: 20px;
+    }
+}
+
 /* Disposition partie du lien vers le site officiel Ghibli */ 
 #link_official_ghibli{
     display: flex;
@@ -160,6 +167,7 @@ body{
 
 /* Conteneurs articles */
 .news{
+    flex: 1 300px;
     border-radius: 15px;
     background-color: #70AF85;
     color: white;
@@ -167,15 +175,11 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Disposition articles */
 #homepage_news{
     display: flex;
-}
-
-@media (max-width: 550px) {
-    #homepage_news {
-      flex-direction: column;
-    }
+    flex-wrap: wrap;
 }
