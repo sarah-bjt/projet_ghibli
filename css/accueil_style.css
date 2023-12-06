@@ -10,29 +10,53 @@ footer{
     border-top: 2px solid #65544A;
 }
 
-button{
-    font-family: 'Quicksand', sans-serif;
-}
 
-/* Add a black background color to the top navigation */
+/* Disposition des éléments dans le header/navbar */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Aligne les éléments à l'extrémité de chaque côté */
-    align-items: center; /* Centre les éléments verticalement */
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 2px solid #65544A;
 }
 
+
+/* LOGO ANIMATION FLOTTANTE */
+#logo_site{
+    width: 100px;
+	animation-name: floating;
+	animation-duration: 2s;
+	animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 7px); } 
+    100%   { transform: translate(0, -0px); }     
+}
+
+
+/* NOM DU SITE */
+#website_title{
+    font-family: 'Love Ya Like A Sister', 'sans-serif';
+    font-size: xx-large;
+}
+
+
+/* MENU DEROULANT */
+/* Bouton Menu */
 .dropdown_button {
     background-color: #70AF85;
     border-radius: 10px;
     color: white;
+    font-family: 'Quicksand', sans-serif;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
-  
-/* The container <div> - needed to position the dropdown content */
+
+/* Position du bouton Menu */
 .dropdown_menu {
     position: relative;
     display: inline-block;
@@ -64,29 +88,19 @@ button{
 /* Change color of dropdown links on hover */
 .dropdown_list a:focus-within {background-color: #f1f1f1}
   
-/* Show the dropdown menu on hover */
+/* Show the dropdown menu on focus */
 .dropdown_menu:focus-within .dropdown_list{
     opacity: 1;
 }
   
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown_menu:focus-within .dropdown_button {
-    background-color: #70AF85;
+    background-color: #659d78;
 }
 
-.news{
-    border-radius: 15px;
-    background-color: #70AF85;
-    color: white;
-    margin: 20px;
-    padding: 20px;
-}
 
-#website_title{
-    font-family: 'Love Ya Like A Sister', 'sans-serif';
-    font-size: xx-large;
-}
-
+/* BANNIERE CITATIONS */
+/* Bannière */
 #homepage_banner{
     background-image: url("../images/banner_page_accueil.gif");
     opacity: 0.8;
@@ -95,6 +109,7 @@ button{
     height: 300px;
 }
 
+/* Citations */
 #homepage_quotes{
     font-size: x-large;
     font-family: 'Chelsea Market', 'sans-serif';
@@ -106,15 +121,35 @@ button{
     padding: 50px;
 }
 
-#homepage_news{
-    display: flex;
-    justify-content: space-around;
-}
 
+/* NEWS */
+/* Séparateur "News" */
 #news_title{
     font-family: 'Love Ya Like A Sister', 'sans-serif';
     border-bottom: 2px solid #65544A;
     border-top: 2px solid #65544A;
     padding: 5px;
     text-align: center;
+}
+
+/* Conteneurs articles */
+.news{
+    border-radius: 15px;
+    background-color: #70AF85;
+    color: white;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+/* Disposition articles */
+#homepage_news{
+    display: flex;
+}
+
+@media (max-width: 550px) {
+    #homepage_news {
+      flex-direction: column;
+    }
 }
