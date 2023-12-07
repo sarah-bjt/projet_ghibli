@@ -118,7 +118,6 @@ button{
     border-top: solid;
     border-bottom: solid;
     border-color: #65544A;
-    width: 100%;
     margin-top: 2%;
     padding: 1%;
 }
@@ -191,17 +190,19 @@ img.affiches {
     border-top: solid;
     border-bottom: solid;
     border-color: #65544A;
-    width: 100%;
     margin-top: 2%;
     padding: 1%;
 }
 
 /* footer de la page */
+footer {
+    border-top: 2px solid #65544A; /* ligne séparateur */
+}
 
 /* Disposition des éléments du footer */
 
 #footer_elements{
-    border-top: 2px solid #65544A; /* ligne séparateur */
+    margin-top: 2%;
     display: flex;
     justify-content: space-around;
 }
