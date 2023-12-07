@@ -102,6 +102,11 @@ main{
     background-color:  #70AF85;
 }
 
+#nom {
+    font-family: 'Love Ya Like A Sister', 'sans-serif';
+    font-size: x-large;
+}
+
 .text_miyazaki {
     color:white;
     padding-top: 3vw;
