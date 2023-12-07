@@ -6,12 +6,9 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Quicksand', sans-serif;
-}
-
-body{
-    font-family: 'Quicksand', sans-serif;
     color: #65544A;
 }
+
 
 /* Le header de la page */
 
@@ -39,7 +36,7 @@ button{
     display: flex;
     justify-content: space-between; /* Aligne les éléments à l'extrémité de chaque côté */
     align-items: center; /* Centre les éléments verticalement */
-    border-bottom: 2px solid #65544A;
+    /* border-bottom: 2px solid #65544A; */
 }
 
 .dropdown_button {
@@ -102,20 +99,32 @@ main{
     background-color:  #70AF85;
 }
 
-#nom {
-    font-family: 'Love Ya Like A Sister', 'sans-serif';
-    font-size: x-large;
-}
-
-.text_miyazaki {
-    color:white;
-    padding-top: 3vw;
-    display: flex;
-    justify-content: center;
-    flex-direction:column;
+#titre {
+    color: #65544A;
+    background-color: #F0E2D0;
+    display: flex; 
     text-align: center;
+    flex-direction: row; 
+     justify-content: flex-end; 
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #65544A;
+    width: 100%;
+    /* margin-top: 2%; */
+    padding: 1%;
+    /* display: flex;
+    justify-content: center;
+    flex-direction:column; */
 }
 
+#titre nom {
+    font-family: 'Love Ya Like A Sister', 'sans-serif';
+}
+
+#act2 {
+    text-align: center;
+    margin-right: 5%;
+}
 
 
 .text_bio,
@@ -124,7 +133,7 @@ main{
     background-color: #F0E2D0;
     color: #65544A;
     border-radius: 30px;
-    padding: 2vw;
+    padding: 3vw;
     margin: 2vw;  
 }
 
@@ -138,7 +147,7 @@ main{
 
 
 .picturs img {
-    height: 20vh;
+    width: 15vw;
     object-fit: contain;
     margin: 1vw;
 }
