@@ -102,28 +102,38 @@ main{
 #titre {
     color: #65544A;
     background-color: #F0E2D0;
-    display: flex; 
     text-align: center;
-    flex-direction: row; 
-     justify-content: flex-end; 
     border-top: solid;
     border-bottom: solid;
     border-color: #65544A;
-    width: 100%;
     /* margin-top: 2%; */
     padding: 1%;
     /* display: flex;
     justify-content: center;
     flex-direction:column; */
+    overflow: hidden;
 }
 
-#titre nom {
+#nom {
     font-family: 'Love Ya Like A Sister', 'sans-serif';
 }
 
 #act2 {
     text-align: center;
-    margin-right: 5%;
+    /* margin-right: 5%; */
+}
+
+.miyazaki_portrait{
+    float: right;
+    margin-right: 10px;
+}
+
+@media (max-width:650px){
+    .miyazaki_portrait{
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 
 
