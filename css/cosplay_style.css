@@ -100,17 +100,29 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2%;
 }
 
 #titre {
     color: #65544A;
     background-color: #F0E2D0;
+    font-family: 'Love Ya Like A Sister', 'sans-serif';
+    font-size: x-large;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #65544A;
+    width: 100%;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+#titre h2 {
+    font-family: 'Love Ya Like A Sister', 'sans-serif';
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-radius: 15px;
-    padding: 2%;
 }
 
 .persos {
@@ -146,12 +158,15 @@ button{
 #presentation {
     background-color: #F0E2D0;
     color: #65544A;
-    border-radius: 15px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #65544A;
+    width: 100%;
     margin-top: 2%;
-    padding: 2%;
+    padding: 1%;
 }
 
 /* Pour le footer de la page */
@@ -161,7 +176,13 @@ button{
     border-top: 2px solid #65544A; /* ligne séparateur */
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+}
+
+@media (max-width: 650px) {
+    #footer_elements {
+      flex-direction: column;
+      margin: 20px;
+    }
 }
 
 /* Disposition partie du lien vers le site officiel Ghibli */ 
