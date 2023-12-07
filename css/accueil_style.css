@@ -4,6 +4,8 @@ body{
     font-family: 'Quicksand', sans-serif;
     background-color: #C6EBC9;
     color: #65544A;
+    margin: 0;
+    padding: 0;
 }
 
 main{
