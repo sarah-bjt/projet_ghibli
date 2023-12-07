@@ -161,7 +161,13 @@ button{
     border-top: 2px solid #65544A; /* ligne séparateur */
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+}
+
+@media (max-width: 650px) {
+    #footer_elements {
+      flex-direction: column;
+      margin: 20px;
+    }
 }
 
 /* Disposition partie du lien vers le site officiel Ghibli */ 
