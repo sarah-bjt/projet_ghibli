@@ -6,10 +6,18 @@ body{
     color: #65544A;
 }
 
+main{
+    background-color: #70AF85;
+}
+
+
 /* FOOTER */
+footer{
+    border-top: 2px solid #65544A; /* séparateur */
+}
+
 /* Disposition des éléments du footer */
 #footer_elements{
-    border-top: 2px solid #65544A; /* ligne séparateur */
     display: flex;
     justify-content: space-around;
 }
@@ -161,6 +169,7 @@ body{
     font-family: 'Love Ya Like A Sister', 'sans-serif';
     border-bottom: 2px solid #65544A;
     border-top: 2px solid #65544A;
+    background-color: #F0E2D0;
     padding: 5px;
     text-align: center;
 }
@@ -169,8 +178,8 @@ body{
 .news{
     flex: 1 300px;
     border-radius: 15px;
-    background-color: #70AF85;
-    color: white;
+    background-color: #F0E2D0;
+    color: #65544A;
     margin-bottom: 25px;
     margin-left: 20px;
     margin-right: 20px;
