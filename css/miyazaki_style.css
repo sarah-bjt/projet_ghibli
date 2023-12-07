@@ -1,98 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Love+Ya+Like+A+Sister&family=Quicksand&display=swap');
+
+/* Toute la page */
+
+* {
     margin: 0px;
     padding: 0px;
-    font-family:'Quicksand', sans-serif;
-}
-h1 {
-    margin : 5px;
+    font-family: 'Quicksand', sans-serif;
 }
 
-header {
-    background-color: #333; 
-    color: #fff;
-    padding: 10px; 
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: #65544A;
+}
+
+/* Le header de la page */
+
+/* LOGO ANIMATION FLOTTANTE */
+#logo_site{
+    width: 100px;
+	animation-name: floating;
+	animation-duration: 2s;
+	animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 7px); } 
+    100%   { transform: translate(0, -0px); }     
+}
+
+button{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+    background-color: #C6EBC9;;
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
-}
-header img {
-    max-width: 100px;
-}
-/* nav {
-    display: flex;
-} */
-nav ul {
-    /* list-style: none; */
-    display: flex;
+    justify-content: space-between; /* Aligne les éléments à l'extrémité de chaque côté */
+    align-items: center; /* Centre les éléments verticalement */
+    border-bottom: 2px solid #65544A;
 }
 
-/* nav li {
-    margin-right: 20px; 
-} */
-
-
-
-.deroulant:hover + .sous,
-.sous:hover {
-    display: block;
+.dropdown_button {
+    background-color: #70AF85;
+    border-radius: 10px;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
-
-.sous {
-    display: none;
+  
+.dropdown_menu {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown_list {
+    opacity: 0;
+    list-style-type: none;
     position: absolute;
-    background-color: lightgreen; 
-    list-style: none;
-    padding: 20px;
-    z-index: 100; 
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    transition: opacity 0.3s ease;
+}
+  
+/* Links inside the dropdown */
+.dropdown_list a {
+    color: #65544A;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown_list a:focus-within {background-color: #f1f1f1}
+  
+/* Show the dropdown menu on hover */
+.dropdown_menu:focus-within .dropdown_list{
+    opacity: 1;
+}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown_menu:focus-within .dropdown_button {
+    background-color: #70AF85;
 }
 
+#website_title{  /*Stylisation du titre*/
+    font-family: 'Love Ya Like A Sister', 'sans-serif';
+    font-size: xx-large;
+}
 
-main *{
-    display: flex;
+main{
+    background-color:  #70AF85;
 }
 
 .text_miyazaki {
-    flex: 1; 
+    color:white;
+    padding-top: 3vw;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
 }
 
-.text_miyazaki,
+
+
 .text_bio,
 .text_otherWorks {
-    flex-direction: row;
-    background-color: green; 
-    border-radius: 15px;
-    padding: 50px;
-    margin: 20px; 
-    color: #fff; 
+    text-align: justify;
+    background-color: #F0E2D0;
+    color: #65544A;
+    border-radius: 30px;
+    padding: 2vw;
+    margin: 2vw;  
 }
 
-#miyazaki_pic {
-    max-width: 100px; 
-}
-#miyazaki_signature {
-    max-width: 100px;
-}
 
 .picturs {
     display: flex;
-    overflow-x: auto; 
-    padding: 10px;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 1vw;
 }
 
 
 .picturs img {
-    max-width: 100%; 
-    margin-right: 30px;
-    padding: 20px;
-    margin-top: 10px;
+    height: 20vh;
+    object-fit: contain;
+    margin: 1vw;
 }
 
+footer{
+    background-color: #C6EBC9;
+}
 
-footer {
-    background-color: rgb(142, 199, 142);
+#footer_elements{
+    border-top: 2px solid #65544A; /* ligne séparateur */
+    padding-top: 5%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 2%;
+}
+
+/* Disposition partie du lien vers le site officiel Ghibli */ 
+#link_official_ghibli{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mise en page navigation dans le footer */
+#navigation_footer_links{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* mise en page copyright et disclaimer */
+#copyright_and_disclaimer{
+    text-align: center;
+    margin-top: 25px;
 }
