@@ -151,6 +151,7 @@ img.affiches {
     border-radius: 15px;
     height: 40vh;
     width: 15vw;
+    object-fit: contain;
 }
 
 @media (max-width: 500px) {  /* Adapte les images pour les écrans mobiles */
