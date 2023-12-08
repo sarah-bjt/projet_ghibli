@@ -13,7 +13,14 @@ body {
 
 /* Le header de la page */
 
-/* LOGO ANIMATION FLOTTANTE */
+.navbar {
+    background-color: #C6EBC9;;
+    display: flex;
+    justify-content: space-between; /* Aligne les éléments à l'extrémité de chaque côté */
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+/* Animation flotante logo */
 #logo_site{
     width: 100px;
 	animation-name: floating;
@@ -52,7 +59,6 @@ body {
     display: inline-block;
 }
   
-/* Dropdown Content (Hidden by Default) */
 .dropdown_list {
     opacity: 0;
     list-style-type: none;
@@ -66,7 +72,7 @@ body {
     transition: opacity 0.3s ease;
 }
   
-/* Links inside the dropdown */
+/* Lien dans la cascade */
 .dropdown_list a {
     color: #65544A;
     padding: 12px 16px;
@@ -75,23 +81,21 @@ body {
     border-radius: 10px;
 }
   
-/* Change color of dropdown links on hover */
+/* Change la couleur des liens si hover */
 .dropdown_list a:focus-within {background-color: #f1f1f1}
   
-/* Show the dropdown menu on hover */
+/* Si hover, cascade visible */
 .dropdown_menu:focus-within .dropdown_list{
     opacity: 1;
 }
-  
-/* Change the background color of the dropdown button when the dropdown content is shown */
+
+/* Change la couleur du bouton cascade quand la cascade est visible */
 .dropdown_menu:focus-within .dropdown_button {
     background-color: #659d78;
 }
 
-#website_title{  /*Stylisation du titre*/
-    font-family: 'Love Ya Like A Sister', 'sans-serif';
-    font-size: xx-large;
-}
+
+/* Style dans le main */
 
 main{
     background-color:  #70AF85;
@@ -112,7 +116,7 @@ main{
     font-family: 'Love Ya Like A Sister', 'sans-serif';
 }
 
-#act2 {
+#presentation {
     text-align: center;
     margin-right: 3vh;
 }
@@ -131,6 +135,7 @@ main{
     margin-bottom: 1vh;
 }
 
+/* Style des textes */
 
 .text_bio,
 .text_otherWorks {
@@ -142,7 +147,7 @@ main{
     margin: 2vw;  
 }
 
-
+/* Ligne d'images */
 .picturs {
     display: flex;
     flex-wrap: wrap;
@@ -150,13 +155,15 @@ main{
     padding: 1vw;
 }
 
-
+/* Style des images */
 .picturs img {
     width: 15vw;
     object-fit: contain;
     margin: 1vw;
 }
 
+
+/* Style du footer */
 footer{
     border-top: 2px solid #65544A; /* séparateur */
     background-color: #C6EBC9;
@@ -189,7 +196,7 @@ footer{
     margin: 0;
 }
 
-/* mise en page copyright et disclaimer */
+/* Mise en page copyright et disclaimer */
 #copyright_and_disclaimer{
     text-align: center;
     margin: 0;
