@@ -14,10 +14,11 @@ body {
 /* Le header de la page */
 
 .navbar {
-    background-color: #C6EBC9;;
     display: flex;
     justify-content: space-between; /* Aligne les éléments à l'extrémité de chaque côté */
     align-items: center; /* Centre les éléments verticalement */
+    border-bottom: 2px solid #65544A;
+    background-color: #C6EBC9;
 }
 
 /* Animation flotante logo */
@@ -35,12 +36,9 @@ body {
     100%   { transform: translate(0, -0px); }     
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between; /* Aligne les éléments à l'extrémité de chaque côté */
-    align-items: center; /* Centre les éléments verticalement */
-    border-bottom: 2px solid #65544A;
-    background-color: #C6EBC9;
+#website_title{  /*Stylisation du titre*/
+    font-family: 'Love Ya Like A Sister', 'sans-serif';
+    font-size: xx-large;
 }
 
 .dropdown_button {
@@ -142,7 +140,7 @@ main{
     text-align: justify;
     background-color: #F0E2D0;
     color: #65544A;
-    border-radius: 30px;
+    border-radius: 15px;
     padding: 3vw;
     margin: 2vw;  
 }
