@@ -2,16 +2,11 @@
 
 /* Toute la page */
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Quicksand', sans-serif;
-}
-
 body{
     font-family: 'Quicksand', sans-serif;
-    background-color: #C6EBC9;
     color: #65544A;
+    margin: 0;
+    padding: 0;
 }
 
 /* Le header de la page */
@@ -31,21 +26,19 @@ body{
     100%   { transform: translate(0, -0px); }     
 }
 
-button{
-    font-family: 'Quicksand', sans-serif;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between; /* Aligne les éléments à l'extrémité de chaque côté */
     align-items: center; /* Centre les éléments verticalement */
     border-bottom: 2px solid #65544A;
+    background-color: #C6EBC9;
 }
 
 .dropdown_button {
     background-color: #70AF85;
     border-radius: 10px;
     color: white;
+    font-family: 'Quicksand', sans-serif;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -61,6 +54,8 @@ button{
 .dropdown_list {
     opacity: 0;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     position: absolute;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -90,7 +85,7 @@ button{
   
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown_menu:focus-within .dropdown_button {
-    background-color: #70AF85;
+    background-color: #659d78;
 }
 
 #website_title{  /*Stylisation du titre*/
@@ -109,10 +104,10 @@ main {
 
 #titre {
     color: #65544A;
+    text-align: center;
     background-color: #F0E2D0;
-    font-size: x-large;
-    border-top: solid;
-    border-bottom: solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
     border-color: #65544A;
     margin-top: 2%;
     padding: 1%;
@@ -181,11 +176,9 @@ img.affiches {
 #presentation {
     background-color: #F0E2D0;
     color: #65544A;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-top: solid;
-    border-bottom: solid;
+    text-align: center;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
     border-color: #65544A;
     margin-top: 2%;
     padding: 1%;
@@ -193,21 +186,22 @@ img.affiches {
 
 /* footer de la page */
 footer {
-    border-top: 2px solid #65544A; /* ligne séparateur */
+    border-top: 2px solid #65544A; /* séparateur */
+    background-color: #C6EBC9;
 }
 
 /* Disposition des éléments du footer */
 
 #footer_elements{
-    margin-top: 2%;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 3vh;
 }
 
 @media (max-width: 650px) {
     #footer_elements {
       flex-direction: column;
-      margin: 20px;
+      margin: 3vh;
     }
 }
 
@@ -227,5 +221,6 @@ footer {
 /* mise en page copyright et disclaimer */
 #copyright_and_disclaimer{
     text-align: center;
-    margin-top: 25px;
+    margin: 0;
+    padding-bottom: 1vh;
 }

@@ -2,21 +2,23 @@
 
 /* Toute la page */
 
-* {
-    margin: 0px;
-    padding: 0px;
+body {
     font-family: 'Quicksand', sans-serif;
     color: #65544A;
+    background-color: #70AF85;
+    margin: 0;
+    padding: 0;
 }
 
 
 /* Le header de la page */
 
 .navbar {
-    background-color: #C6EBC9;;
     display: flex;
     justify-content: space-between; /* Aligne les éléments à l'extrémité de chaque côté */
     align-items: center; /* Centre les éléments verticalement */
+    border-bottom: 2px solid #65544A;
+    background-color: #C6EBC9;
 }
 
 /* Animation flotante logo */
@@ -34,22 +36,16 @@
     100%   { transform: translate(0, -0px); }     
 }
 
-/*Stylisation du titre*/
-#website_title{  
+#website_title{  /*Stylisation du titre*/
     font-family: 'Love Ya Like A Sister', 'sans-serif';
     font-size: xx-large;
-}
-
-/* Bouton menu */
-
-button{
-    font-family: 'Quicksand', sans-serif;
 }
 
 .dropdown_button {
     background-color: #70AF85;
     border-radius: 10px;
     color: white;
+    font-family: 'Quicksand', sans-serif;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -93,7 +89,7 @@ button{
 
 /* Change la couleur du bouton cascade quand la cascade est visible */
 .dropdown_menu:focus-within .dropdown_button {
-    background-color: #70AF85;
+    background-color: #659d78;
 }
 
 
@@ -106,12 +102,12 @@ main{
 #titre {
     color: #65544A;
     background-color: #F0E2D0;
-    text-align: center;
-    border-top: solid;
-    border-bottom: solid;
-    border-color: #65544A;
-    padding: 1%;
-    overflow: hidden;
+    border-top: 2px solid #65544A;
+    border-bottom: 2px solid #65544A;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
 #nom {
@@ -120,19 +116,21 @@ main{
 
 #presentation {
     text-align: center;
+    margin-right: 3vh;
 }
+
+#miyazaki_div{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+
 
 .miyazaki_portrait{
-    float: right;
-    margin-right: 10px;
-}
-
-@media (max-width:650px){
-    .miyazaki_portrait{
-        float: none;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+    width: 8vh;
+    margin-left: 5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 /* Style des textes */
@@ -142,7 +140,7 @@ main{
     text-align: justify;
     background-color: #F0E2D0;
     color: #65544A;
-    border-radius: 30px;
+    border-radius: 15px;
     padding: 3vw;
     margin: 2vw;  
 }
@@ -165,15 +163,22 @@ main{
 
 /* Style du footer */
 footer{
+    border-top: 2px solid #65544A; /* séparateur */
     background-color: #C6EBC9;
 }
 
+/* Disposition des éléments du footer */
 #footer_elements{
-    border-top: 2px solid #65544A; /* ligne séparateur */
-    padding-top: 5%;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    margin-bottom: 3vh;
+}
+
+@media (max-width: 650px) {
+    #footer_elements {
+      flex-direction: column;
+      margin: 3vh;
+    }
 }
 
 /* Disposition partie du lien vers le site officiel Ghibli */ 
@@ -192,5 +197,6 @@ footer{
 /* Mise en page copyright et disclaimer */
 #copyright_and_disclaimer{
     text-align: center;
-    margin-top: 25px;
+    margin: 0;
+    padding-bottom: 1vh;
 }

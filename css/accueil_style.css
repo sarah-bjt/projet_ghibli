@@ -2,7 +2,6 @@
 
 body{
     font-family: 'Quicksand', sans-serif;
-    background-color: #C6EBC9;
     color: #65544A;
     margin: 0;
     padding: 0;
@@ -16,18 +15,20 @@ main{
 /* FOOTER */
 footer{
     border-top: 2px solid #65544A; /* séparateur */
+    background-color: #C6EBC9;
 }
 
 /* Disposition des éléments du footer */
 #footer_elements{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 3vh;
 }
 
 @media (max-width: 650px) {
     #footer_elements {
       flex-direction: column;
-      margin: 20px;
+      margin: 3vh;
     }
 }
 
@@ -47,7 +48,8 @@ footer{
 /* mise en page copyright et disclaimer */
 #copyright_and_disclaimer{
     text-align: center;
-    margin-top: 25px;
+    margin: 0;
+    padding-bottom: 1vh;
 }
 
 
@@ -58,6 +60,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #65544A;
+    background-color: #C6EBC9;
 }
 
 
@@ -172,7 +175,7 @@ footer{
     border-bottom: 2px solid #65544A;
     border-top: 2px solid #65544A;
     background-color: #F0E2D0;
-    padding: 5px;
+    padding: 1vh;
     text-align: center;
 }
 
@@ -182,10 +185,11 @@ footer{
     border-radius: 15px;
     background-color: #F0E2D0;
     color: #65544A;
-    margin-bottom: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
+    text-align: justify;
+    margin-bottom: 3vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    padding: 3vh;
     box-sizing: border-box;
 }
 
